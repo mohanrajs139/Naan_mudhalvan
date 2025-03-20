@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliders</title>
+
+    <style>
+        #container{
+            height: 100vh;
+            background-image: url('');
+        }
+
+        .img{
+            width: 50px;
+            height: 50px;
+        }
+        #img1{
+            position: absolute;
+            left: 0px;
+            top: 50%;
+            transform: rotate(180deg);
+        }
+        #img2{
+            position: absolute;
+            right: 0px;
+            top: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img class="img" id="img1" onclick="prevButton" src="arrow.png">
+        <img class="img" id="img2" onclick="nextButton" src="arrow.png">
+    </div>
+
+    <script>
+        const value = document.getElementById('container');
+
+        let img = ['image1.jpg','image2.jpg','image3.jpg'];
+
+        let i = 0;
+        function nextButton(){
+            
+            i++;
+            if(i == img.length){
+                i = 0;
+            }
+        value.style.backgroundImage = 'url'("' +img[i]+'");
+        } 
+    </script>
+</body>
+</html> 
+
+

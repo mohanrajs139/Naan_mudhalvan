@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>session 4</title>
+
+    <style>
+body {
+    font-family:Arial, sans-serif;
+    background-color:#f4f4f4;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+    border:none;
+    padding:15px;
+    background-color:rgb(234, 234, 234);
+    margin-bottom: 10px;
+    border-radius:8px;
+    gap:20px;
+}
+
+.image,img{
+    width: 200px;
+    height:300px;
+    object-fit: contain;
+    border-radius:5px;
+}
+
+.info{
+    flex-grow: 1;
+}
+
+.price{
+    font-weight:bold;
+    font-size:18px;
+    color: #e60000;
+}
+
+button {
+    width:120px;
+    height:40px;
+    border-radius:20px;
+    color: black;
+    background-color: yellow;
+    border: none;
+    font-weight:bold;
+    cursor:pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover{ 
+    background-color: orange;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="products-container"></div>
+
+    <script src="cart.js"></script>
+
+</body>
+</html>
